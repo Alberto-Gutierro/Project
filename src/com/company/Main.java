@@ -24,6 +24,7 @@ import java.util.Scanner;
 public class Main {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
+            Empresario empresario=new Empresario();
             int opcion;
 
             do {
@@ -35,8 +36,10 @@ public class Main {
                 opcion = scanner.nextInt();
                 scanner.nextLine();
                 switch (opcion) {
-                    case '1':
-                        new Empresario().menuEmp();
+                    case 1:
+
+                        empresario.menuEmp();
+
                         break;
 
                     default:
@@ -47,4 +50,5 @@ public class Main {
             } while (opcion != '0');
 
         }
+
     }
