@@ -35,6 +35,6 @@ public class Datos {
 
     System.out.println("Teléfono:");
     telEmpresario = scanner.nextInt();
-
-    }
 }
+}
+
