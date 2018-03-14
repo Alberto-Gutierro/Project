@@ -13,9 +13,6 @@ public class Datos {
     int telTienda;
     String CategoriaTienda;
 
-
-    // Control Errores (Metodo)
-
     void pedirDatos() {
         Scanner scanner = new Scanner(System.in);
 
@@ -47,5 +44,4 @@ public class Datos {
 
 
     }
-
 }
