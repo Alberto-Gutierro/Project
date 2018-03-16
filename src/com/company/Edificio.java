@@ -2,16 +2,16 @@ package com.company;
 
 public class Edificio {
 
-    int pisos;
+    public int pisos;
 
-    int tamaño;
+    public int tamaño;
 
-    String nombre;
+    public String nombre;
 
-    String ubicacion;
+    public String ubicacion;
 
-    String color;
+    public String color;
 
-    char area;
+    public char area;
 
 }
