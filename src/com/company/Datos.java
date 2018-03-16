@@ -4,15 +4,14 @@ import java.util.Scanner;
 
 public class Datos {
 
-    String nombreEmpresario;
-    String apellidoEmpresario;
-    String nickEmpresario;
-    int NIF;
-    int telEmpresario;
-    String nombreTienda;
-    int telTienda;
-    String CategoriaTienda;
-
+    public String nombreEmpresario;
+    public String apellidoEmpresario;
+    public String nickEmpresario;
+    public int NIF;
+    public int telEmpresario;
+    public String nombreTienda;
+    public int telTienda;
+    public String CategoriaTienda;
 
 //    Control Errores (Metodo)
 
