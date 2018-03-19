@@ -1,11 +1,13 @@
-package com.company;
+package com.company.view;
+
+import com.company.FICHA;
 
 import java.util.Scanner;
 
 public class Empresario {
 
 
-    void menuEmp(){
+   public void menuEmp(){
 
 
         Scanner scanner = new Scanner(System.in);

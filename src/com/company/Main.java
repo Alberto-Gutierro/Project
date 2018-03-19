@@ -19,6 +19,8 @@ package com.company;
 //        Normativa
 
 
+import com.company.view.Empresario;
+
 import java.util.Scanner;
 
 public class Main {
