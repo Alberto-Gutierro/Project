@@ -1,4 +1,4 @@
 package com.company.view;
 
-public class Admin {
+public class MenuAdmin {
 }

@@ -1,4 +1,4 @@
 package com.company.view;
 
-public class Cliente {
+public class MenuCliente {
 }

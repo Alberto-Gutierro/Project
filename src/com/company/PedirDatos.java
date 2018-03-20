@@ -1,17 +1,14 @@
 package com.company;
-
 import java.util.Scanner;
 
-public class Datos {
+public class PedirDatos {
 
-    String nombreEmpresario;
-    String apellidoEmpresario;
-    String nickEmpresario;
-    int NIF;
-    int telEmpresario;
-    String nombreTienda;
-    int telTienda;
-    String CategoriaTienda;
+    public String nombreEmpresario;
+    public String apellidoEmpresario;
+    public String nickEmpresario;
+    public int NIF;
+    public int telEmpresario;
+
 
     void pedirDatos() {
         Scanner scanner = new Scanner(System.in);
@@ -37,7 +34,8 @@ public class Datos {
         nombreTienda=scanner.nextLine();
 
         System.out.println("Introduzca el telefono de su tienda");
-        telTienda=scanner.nextInt();
+        Tienda.telTienda=scanner.nextInt();
+
 
         System.out.println("Introduzca el tipo de Categoria a la que pertenece su tienda (Alimentacion, Ocio, Moda, Hosteleria");
         CategoriaTienda=scanner.nextLine();

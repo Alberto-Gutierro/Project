@@ -1,25 +1,20 @@
 package com.company.view;
 
-import com.company.FICHA;
-
 import java.util.Scanner;
 
-public class Empresario {
+public class MenuPrincipal {
 
-
-   public void menuEmp(){
-
+    public void mostrarMenuPrincipal() {
 
         Scanner scanner = new Scanner(System.in);
-        FICHA ficha=new FICHA();
 
         int opcion;
 
         do {
             System.out.println("    ------------------------------");
-            System.out.println("    Bienvenido al Menu De Empresario" );
-            System.out.println("    ¿Que Deseas Hacer?");
-            System.out.println("    1. Abrir Locl\n    2. Horarios \n \n\n    0 Salir");
+            System.out.println("    Bienvenido al Menu Principal");
+            System.out.println("    ¿Que tipo de persona Eres?");
+            System.out.println("    1. Empresario\n    2 Cliente \n    3 Admin\n \n\n    0 Salir");
             System.out.println("    ------------------------------");
             opcion = scanner.nextInt();
             scanner.nextLine();
@@ -34,8 +29,5 @@ public class Empresario {
             }
 
         } while (opcion != '0');
-
-
-
     }
 }
