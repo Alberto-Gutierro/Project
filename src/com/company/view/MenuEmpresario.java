@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MenuEmpresario {
 
-   public void menuEmp() {
+   public void mostrar() {
 
 
    }

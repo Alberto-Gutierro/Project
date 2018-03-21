@@ -1,7 +1,11 @@
 package com.company;
+import com.company.model.Tienda;
+
 import java.util.Scanner;
 
 public class PedirDatos {
+
+    Tienda tienda = new Tienda();
 
     public String nombreEmpresario;
     public String apellidoEmpresario;
@@ -31,14 +35,13 @@ public class PedirDatos {
         telEmpresario = scanner.nextInt();
 
         System.out.println("Introduzca el nombre de su tienda");
-        nombreTienda=scanner.nextLine();
+        tienda.nombreTienda=scanner.nextLine();
 
         System.out.println("Introduzca el telefono de su tienda");
-        Tienda.telTienda=scanner.nextInt();
-
+        tienda.telTienda=scanner.nextInt();
 
         System.out.println("Introduzca el tipo de Categoria a la que pertenece su tienda (Alimentacion, Ocio, Moda, Hosteleria");
-        CategoriaTienda=scanner.nextLine();
+        tienda.CategoriaTienda=scanner.nextLine();
 
 
     }
