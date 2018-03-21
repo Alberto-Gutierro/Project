@@ -10,7 +10,6 @@ public class PedirDatos {
     Empresario empresario = new Empresario();
 
 
-
     void pedirDatos() {
         Scanner scanner = new Scanner(System.in);
 
