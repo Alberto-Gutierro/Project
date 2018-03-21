@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class PantallaCrearEdificio {
 
+    Scanner scanner = new Scanner(System.in);
     public void mostrar(ManagerEdificios managerEdificios) {
 
 
@@ -15,7 +16,7 @@ public class PantallaCrearEdificio {
         System.out.println("Color:");
         String color = Scanner.nextLine();
         System.out.println("Nombre:");
-
+        String nombre = Scanner.nextLine();
 
         managerEdificios.crearEdificio();
     }
