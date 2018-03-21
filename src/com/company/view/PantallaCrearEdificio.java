@@ -12,11 +12,11 @@ public class PantallaCrearEdificio {
 
         System.out.println("CREAR EDIFICIO NUEVO");
         System.out.println("Pisos:");
-        String pisos = Scanner.nextLine();
+        String pisos = scanner.nextLine();
         System.out.println("Color:");
-        String color = Scanner.nextLine();
+        String color = scanner.nextLine();
         System.out.println("Nombre:");
-        String nombre = Scanner.nextLine();
+        String nombre = scanner.nextLine();
 
         managerEdificios.crearEdificio();
     }
