@@ -1,4 +1,4 @@
-package com.company;
+package com.company.view;
 import com.company.model.Empresario;
 import com.company.model.Tienda;
 
@@ -8,10 +8,9 @@ public class PedirDatos {
 
     Tienda tienda = new Tienda();
     Empresario empresario = new Empresario();
+    Scanner scanner = new Scanner(System.in);
 
-
-    void pedirDatos() {
-        Scanner scanner = new Scanner(System.in);
+    public void pedirDatosEmpresario() {
 
         System.out.println("DATOS DEL EMPRESARIO");
 
@@ -29,6 +28,10 @@ public class PedirDatos {
 
         System.out.println("Introduzca su Teléfono:");
         empresario.telEmpresario = scanner.nextInt();
+        scanner.nextLine();
+    }
+
+    public void pedirDatosTienda() {
 
         System.out.println("Introduzca el nombre de su tienda");
         tienda.nombreTienda=scanner.nextLine();

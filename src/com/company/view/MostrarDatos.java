@@ -1,31 +1,31 @@
 package com.company.view;
 
-import com.company.PedirDatos;
+import com.company.model.Empresario;
+import com.company.model.Tienda;
 
 public class MostrarDatos {
 
-    PedirDatos pedirDatos = new PedirDatos();
+    Empresario empresario = new Empresario();
+    Tienda tienda = new Tienda();
 
-    void mostrarFichaEmpresario() {
+    public void mostrarFichaEmpresario() {
 
         System.out.println("Datos empresario");
         System.out.println("--------------------------------");
-        System.out.println("Nombre empresario: " + pedirDatos.nombreEmpresario);
-        System.out.println("Apellidos empresario: " + pedirDatos.apellidoEmpresario);
-        System.out.println("Nick empresario: " + pedirDatos.nickEmpresario);
-        System.out.println("NIF: " + pedirDatos.NIF);
-        System.out.println("Tel. empresario: " + pedirDatos.telEmpresario);
+        System.out.println("Nombre empresario: " + empresario.nombreEmpresario);
+        System.out.println("Apellidos empresario: " + empresario.apellidoEmpresario);
+        System.out.println("Nick empresario: " + empresario.nickEmpresario);
+        System.out.println("NIF: " + empresario.NIF);
+        System.out.println("Tel. empresario: " + empresario.telEmpresario);
     }
 
-    void mostrarFichaTienda() {
+    public void mostrarFichaTienda() {
 
         System.out.println("Datos tienda");
         System.out.println("--------------------------------");
-        System.out.println("Nombre tienda: " + pedirDatos.nombreTienda);
-        System.out.println("Tel. tienda: " + pedirDatos.telTienda);
-        System.out.println("Categoria tienda: " + pedirDatos.CategoriaTienda);
-
-
+        System.out.println("Nombre tienda: " + tienda.nombreTienda);
+        System.out.println("Tel. tienda: " + tienda.telTienda);
+        System.out.println("Categoria tienda: " + tienda.CategoriaTienda);
     }
 
 }
