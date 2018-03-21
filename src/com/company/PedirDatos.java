@@ -1,4 +1,5 @@
 package com.company;
+import com.company.model.Empresario;
 import com.company.model.Tienda;
 
 import java.util.Scanner;
@@ -6,12 +7,8 @@ import java.util.Scanner;
 public class PedirDatos {
 
     Tienda tienda = new Tienda();
+    Empresario empresario = new Empresario();
 
-    public String nombreEmpresario;
-    public String apellidoEmpresario;
-    public String nickEmpresario;
-    public int NIF;
-    public int telEmpresario;
 
 
     void pedirDatos() {
@@ -20,19 +17,19 @@ public class PedirDatos {
         System.out.println("DATOS DEL EMPRESARIO");
 
         System.out.println("Introduzca su Nombre:");
-        nombreEmpresario = scanner.nextLine();
+        empresario.nombreEmpresario = scanner.nextLine();
 
         System.out.println("Introduzca su Apellido:");
-        apellidoEmpresario = scanner.nextLine();
+        empresario.apellidoEmpresario = scanner.nextLine();
 
         System.out.println("Introduzca su Nick:");
-        nickEmpresario = scanner.nextLine();
+        empresario.nickEmpresario = scanner.nextLine();
 
         System.out.println("Introduzca su NIF:");
-        NIF = scanner.nextInt();
+        empresario.NIF = scanner.nextInt();
 
         System.out.println("Introduzca su Teléfono:");
-        telEmpresario = scanner.nextInt();
+        empresario.telEmpresario = scanner.nextInt();
 
         System.out.println("Introduzca el nombre de su tienda");
         tienda.nombreTienda=scanner.nextLine();
