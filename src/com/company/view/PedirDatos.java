@@ -1,6 +1,7 @@
 package com.company.view;
 import com.company.model.Empresario;
 import com.company.model.Tienda;
+import com.company.view.widget.EditText;
 
 import java.util.Scanner;
 
@@ -13,15 +14,11 @@ public class PedirDatos {
     public void pedirDatosEmpresario() {
 
         System.out.println("DATOS DEL EMPRESARIO");
+        EditText editText = new EditText();
 
-        System.out.println("Introduzca su Nombre:");
-        empresario.nombreEmpresario = scanner.nextLine();
-
-        System.out.println("Introduzca su Apellido:");
-        empresario.apellidoEmpresario = scanner.nextLine();
-
-        System.out.println("Introduzca su Nick:");
-        empresario.nickEmpresario = scanner.nextLine();
+        empresario.nombreEmpresario = editText.read("Introduzca su nombre:");
+        empresario.apellidoEmpresario = editText.read("Introduzca su Apellido:");
+        empresario.nickEmpresario = editText.read("Introduzca su Nick:");
 
         System.out.println("Introduzca su NIF:");
         empresario.NIF = scanner.nextInt();

@@ -1,21 +1,15 @@
 package com.company;
 
-import com.company.view.MostrarDatos;
-import com.company.view.PedirDatos;
+import com.company.managers.ManagerCentroComercial;
+import com.company.view.MenuPrincipal;
 
 public class Main {
     public static void main(String[] args) {
 
-        MostrarDatos mostrarDatos = new MostrarDatos();
-        PedirDatos pedirDatos = new PedirDatos();
+        ManagerCentroComercial managerCentroComercial = new ManagerCentroComercial();
+        MenuPrincipal menuPrincipal = new MenuPrincipal();
 
-
-        pedirDatos.pedirDatosEmpresario();
-        pedirDatos.pedirDatosTienda();
-
-        mostrarDatos.mostrarFichaEmpresario();
-        System.out.println("");
-        mostrarDatos.mostrarFichaTienda();
+        menuPrincipal.mostrar(managerCentroComercial);
 
     }
 }

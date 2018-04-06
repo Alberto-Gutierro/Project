@@ -1,10 +1,12 @@
 package com.company.view;
 
+import com.company.managers.ManagerCentroComercial;
+
 import java.util.Scanner;
 
 public class MenuPrincipal {
 
-    public void mostrar() {
+    public void mostrar(ManagerCentroComercial managerCentroComercial) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -18,16 +20,12 @@ public class MenuPrincipal {
             System.out.println("    ------------------------------");
             opcion = scanner.nextInt();
             scanner.nextLine();
-            switch (opcion) {
-                case 1:
 
-                    break;
+        } while (opcion > 0 && opcion < 3);
 
-                default:
-                    System.out.println("OPCIÓN INCORRECTA!");
-                    break;
-            }
+        managerCentroComercial.menuPrincipal(opcion);
 
-        } while (opcion != '0');
+
+
     }
 }
