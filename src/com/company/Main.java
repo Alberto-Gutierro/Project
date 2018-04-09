@@ -9,7 +9,7 @@ public class Main {
         ManagerCentroComercial managerCentroComercial = new ManagerCentroComercial();
         MenuPrincipal menuPrincipal = new MenuPrincipal();
 
-        menuPrincipal.mostrar(managerCentroComercial);
+        menuPrincipal.mostrar();
 
     }
 }

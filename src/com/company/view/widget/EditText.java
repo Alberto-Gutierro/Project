@@ -8,3 +8,4 @@ public class EditText {
         return new Scanner(System.in).nextLine();
     }
 }
+
