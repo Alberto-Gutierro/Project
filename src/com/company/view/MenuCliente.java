@@ -1,28 +1,43 @@
 package com.company.view;
 
+import java.util.Scanner;
+
 public class MenuCliente {
 
     int opcion;
 
     public void mostrar(){
 
-        switch (opcion) {
-            case 1:
+        Scanner scanner = new Scanner(System.in);
 
-                break;
-            case 2:
+        int opcion;
 
-                break;
-            case 3:
+        do {
+            System.out.println("    ------------------------------");
+            System.out.println("    Menu Cliente");
+            System.out.println("    ¿Que deseas?");
+            System.out.println("    1. Buscar tienda\n    2. Mirar mapa\n\n    0 Salir");
+            System.out.println("    ------------------------------");
+            opcion = scanner.nextInt();
+            scanner.nextLine();
 
-                break;
-            case 0:
+            switch (opcion) {
+                case 1:
 
-                break;
+                    break;
+                case 2:
 
-            default:
-                System.out.println("OPCIÓN INCORRECTA!");
-                break;
-        }
+                    break;
+                case 0:
+                    MenuPrincipal menuPrincipal=new MenuPrincipal();
+                    menuPrincipal.mostrar();
+                    break;
+
+                default:
+                    System.out.println("OPCIÓN INCORRECTA!");
+                    break;
+            }
+
+        } while (opcion != 0);
     }
 }
