@@ -6,7 +6,7 @@ import com.company.view.PedirDatos;
 
 public class ManagerCentroComercial {
 
-    Tienda[] tienda = new Tienda[10];
+    public Tienda[] tienda = new Tienda[10];
 
 
 
