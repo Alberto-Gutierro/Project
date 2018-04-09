@@ -1,25 +1,15 @@
 package com.company;
 
-public class Main {
+import com.company.managers.ManagerCentroComercial;
+import com.company.view.MenuPrincipal;
 
+public class Main {
     public static void main(String[] args) {
 
-//        BIENVENIDO A ‘LA CONDUCTORA’ TU CENTRO COMERCIAL DE CONFIANZA
-//
-//                --------------
-//
-//        Tipo de usuario
-//
-//                Empresario
-//        Cliente
-//                Administrador
-//
-//        --------------
-//
-//                GCC (Empresario)
-//
-//        Añadir tienda (nombre tienda, categoría )
-//        Mostrar Mapa
-//        Normativa
+        ManagerCentroComercial managerCentroComercial = new ManagerCentroComercial();
+        MenuPrincipal menuPrincipal = new MenuPrincipal();
+
+        menuPrincipal.mostrar();
+
     }
 }
