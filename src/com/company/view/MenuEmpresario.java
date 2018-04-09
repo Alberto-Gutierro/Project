@@ -24,14 +24,18 @@ public class MenuEmpresario {
 
       switch (opcion) {
          case 1:
-//                Crear tienda
             PedirDatos pedirDatos = new PedirDatos();
+            pedirDatos.pedirDatosEmpresario();
+            pedirDatos.pedirDatosTienda();
             break;
          case 2:
 //                Mostrar mapa
+
             break;
          case 3:
 //                Acceder tienda
+
+
             break;
 
          default:

@@ -20,13 +20,15 @@ public class PedirDatos {
         empresario.apellidoEmpresario = editText.read("Introduzca su Apellido:");
         empresario.nickEmpresario = editText.read("Introduzca su Nick:");
 
-        System.out.println("Introduzca su NIF:");
-        empresario.NIF = scanner.nextInt();
+        System.out.println("Introduzca un dni, ejemplo:");
+        empresario.NIF = editText.readnumeros(123325122);
 
-        System.out.println("Introduzca su Teléfono:");
-        empresario.telEmpresario = scanner.nextInt();
-        scanner.nextLine();
+
+        System.out.println("Introduzca un numero de telefono,ejemplo:");
+        empresario.telEmpresario = editText.readnumeros(933865652);
+
     }
+
 
     public void pedirDatosTienda() {
 
@@ -35,6 +37,7 @@ public class PedirDatos {
 
         System.out.println("Introduzca el telefono de su tienda");
         tienda.telTienda=scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("Introduzca el tipo de Categoria a la que pertenece su tienda (Alimentacion, Ocio, Moda, Hosteleria");
         tienda.CategoriaTienda=scanner.nextLine();
