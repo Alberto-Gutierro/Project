@@ -7,5 +7,4 @@ public class ManagerCentroComercial {
     Tienda[] tienda = new Tienda[10];
 
 
-
 }
