@@ -35,6 +35,7 @@ public class PedirDatos {
 
         System.out.println("Introduzca el telefono de su tienda");
         tienda.telTienda=scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("Introduzca el tipo de Categoria a la que pertenece su tienda (Alimentacion, Ocio, Moda, Hosteleria");
         tienda.CategoriaTienda=scanner.nextLine();
