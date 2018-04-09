@@ -19,7 +19,7 @@ public class MenuPrincipal {
             opcion = scanner.nextInt();
             scanner.nextLine();
 
-        switch (opcion) {
+            switch (opcion) {
             case 1:
                 MenuEmpresario menuEmpresario = new MenuEmpresario();
                 menuEmpresario.mostrar();
@@ -38,7 +38,7 @@ public class MenuPrincipal {
             default:
                 System.out.println("OPCIÓN INCORRECTA!");
                 break;
-        }
+            }
 
         } while (opcion != 0);
 
