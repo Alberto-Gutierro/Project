@@ -1,12 +1,14 @@
 package com.company.view;
 
+import com.company.managers.ManagerCentroComercial;
+
 import java.util.Scanner;
 
 public class MenuCliente {
 
     int opcion;
 
-    public void mostrar(){
+    public void mostrar(ManagerCentroComercial managerCentroComercial){
 
         Scanner scanner = new Scanner(System.in);
 
@@ -30,7 +32,7 @@ public class MenuCliente {
                     break;
                 case 0:
                     MenuPrincipal menuPrincipal=new MenuPrincipal();
-                    menuPrincipal.mostrar();
+                    menuPrincipal.mostrar(managerCentroComercial);
                     break;
 
                 default:

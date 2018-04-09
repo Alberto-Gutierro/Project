@@ -22,10 +22,12 @@ public class PantallaMapa {
             }
         }
 
-        System.out.println("---------------");
+
+        System.out.println("\n-------");
         System.out.println("-"+local[0]+local[1]+local[2]+local[3]+local[4]+"-");
         System.out.println("-"+local[5]+local[6]+local[7]+local[8]+local[9]+"-");
-        System.out.println("---------------");
+        System.out.println("-------\n");
+
 
     }
 }
