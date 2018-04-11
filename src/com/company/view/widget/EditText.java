@@ -9,7 +9,7 @@ public class EditText {
         return new Scanner(System.in).nextLine();
     }
 
-    public int readnumeros(Integer hint){
+    public int readNumeros(String hint){
         System.out.println(hint);
         return new Scanner(System.in).nextInt();}
 }
