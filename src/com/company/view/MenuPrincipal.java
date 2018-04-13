@@ -28,7 +28,7 @@ public class MenuPrincipal {
                 break;
             case 2:
                 MenuCliente menuCliente = new MenuCliente();
-                menuCliente.mostrar();
+                menuCliente.mostrar(managerCentroComercial);
                 break;
             case 3:
                 MenuAdmin menuAdmin = new MenuAdmin();

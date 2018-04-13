@@ -22,7 +22,6 @@ public class MenuEmpresario {
          opcion = scanner.nextInt();
          scanner.nextLine();
 
-      } while (opcion > 1 && opcion < 3);
 
       switch (opcion) {
          case 1:
@@ -34,15 +33,21 @@ public class MenuEmpresario {
          case 2:
 //                Mostrar mapa
 
+            PantallaMapa pantallaMapa =new PantallaMapa();
+            pantallaMapa.mostrar(managerCentroComercial);
+
+
+
+
             break;
          case 3:
 //                Acceder tienda
-
             break;
 
          default:
             System.out.println("OPCIÓN INCORRECTA!");
             break;
       }
+      } while (opcion != 0);
    }
 }
