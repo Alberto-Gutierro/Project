@@ -1,10 +1,12 @@
 package com.company.view;
 
+import com.company.managers.ManagerCentroComercial;
+
 import java.util.Scanner;
 
 public class MenuEmpresario {
 
-   public void mostrar() {
+   public void mostrar(ManagerCentroComercial managerCentroComercial) {
 
       Scanner scanner = new Scanner(System.in);
       int opcion;
@@ -24,13 +26,14 @@ public class MenuEmpresario {
 
       switch (opcion) {
          case 1:
-//
             PedirDatos pedirDatos = new PedirDatos();
-            pedirDatos.pedirDatosEmpresario();
-            pedirDatos.pedirDatosTienda();
+            pedirDatos.pedirDatosEmpresario(managerCentroComercial);
+            pedirDatos.pedirDatosTienda(managerCentroComercial);
+
             break;
          case 2:
 //                Mostrar mapa
+
             break;
          case 3:
 //                Acceder tienda

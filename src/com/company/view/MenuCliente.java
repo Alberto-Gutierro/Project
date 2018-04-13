@@ -30,7 +30,6 @@ public class MenuCliente {
                     break;
                 case 0:
                     MenuPrincipal menuPrincipal=new MenuPrincipal();
-                    menuPrincipal.mostrar();
                     break;
 
                 default:
