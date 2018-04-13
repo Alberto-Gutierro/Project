@@ -29,6 +29,7 @@ public class MenuEmpresario {
             PedirDatos pedirDatos = new PedirDatos();
             pedirDatos.pedirDatosEmpresario(managerCentroComercial);
             pedirDatos.pedirDatosTienda(managerCentroComercial);
+
             break;
          case 2:
 //                Mostrar mapa
@@ -36,7 +37,6 @@ public class MenuEmpresario {
             break;
          case 3:
 //                Acceder tienda
-
 
             break;
 
