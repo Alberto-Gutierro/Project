@@ -18,7 +18,7 @@ public class MenuEmpresario {
          System.out.println("2. Mostrar mapa (espacios[tiendas] libres)");
          System.out.println("3. Acceder tienda (info. tienda)");
          System.out.println("0. Salir");
-
+//
          opcion = scanner.nextInt();
          scanner.nextLine();
 
