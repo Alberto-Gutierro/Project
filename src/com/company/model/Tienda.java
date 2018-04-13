@@ -7,4 +7,3 @@ public class Tienda {
     public String CategoriaTienda;
 
 }
-a
