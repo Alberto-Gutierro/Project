@@ -72,15 +72,14 @@ public class ManagerCentroComercial {
 
     }
 
-
     public void crearTiendasInciles(){
-        añadirTienda("Tienda1", 43454, "Hosteleria");
-        añadirTienda("Tienda2", 43454, "Hosteleria");
-
-        añadirTienda("Tienda3", 43454, "Ocio");
-        añadirTienda("Tienda4", 43454, "Hosteleria");
-        añadirTienda("Tienda5", 43454, "Hosteleria");
-        añadirTienda("Tienda6", 43454, "Hosteleria");
+        añadirTienda("MercaHome", 111111111, "Alimentacion");
+        añadirTienda("M & H", 222222222, "Moda");
+        añadirTienda("Nuevo Parque", 333333333, "Ocio");
+        añadirTienda("JAJA SAL2", 444444444, "Hosteleria");
+        añadirTienda("Arcampo", 555555555, "Alimentacio");
+        añadirTienda("Raven", 666666666, "Ocio");
+        añadirTienda("Boveda", 777777777, "Ocio");
 
     }
 
