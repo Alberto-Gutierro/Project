@@ -34,7 +34,7 @@ public class MenuEmpresario {
 //                Mostrar mapa
 
             PantallaMapa pantallaMapa =new PantallaMapa();
-            pantallaMapa.mostrar(managerCentroComercial);
+            pantallaMapa.mostrar(managerCentroComercial, null);
 
 
 

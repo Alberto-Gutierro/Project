@@ -2,11 +2,16 @@ package com.company.managers;
 
 import com.company.model.Empresario;
 import com.company.model.Tienda;
+import com.company.view.PantallaMapa;
 
 public class ManagerCentroComercial {
 
-    Tienda[] tienda = new Tienda[10];
-    Empresario[] empresarios = new Empresario[10];
+    public Tienda[] tienda = new Tienda[10];
+
+    public String[] opciones = {"Alimentacion", "Ocio", "Moda", "Hosteleria"};
+
+
+    public Empresario[] empresarios = new Empresario[10];
 
    public void añadirTienda(String tiendanombre, int tiendatelf, String tipotienda){
 
@@ -23,7 +28,27 @@ public class ManagerCentroComercial {
             }
 
         }
+    }
 
+    public int[] buscarTiendaPorCateoria(String categoria){
+       int cantidad=0;
+        for (int i = 0; i < tienda.length ; i++) {
+            if (tienda[i] != null && categoria.equals(tienda[i].CategoriaTienda)){
+                cantidad++;
+            }
+
+        }
+
+       int[] encontradas = new int[cantidad]; // {3,7,9}
+
+        for (int i = 0, j=0; i < tienda.length ; i++) {
+            if (tienda[i] != null && categoria.equals(tienda[i].CategoriaTienda)){
+                encontradas[j] = i;
+                j++;
+            }
+        }
+
+        return encontradas;
     }
 
 
@@ -48,9 +73,18 @@ public class ManagerCentroComercial {
     }
 
 
+    public void crearTiendasInciles(){
+        añadirTienda("Tienda1", 43454, "Hosteleria");
+        añadirTienda("Tienda2", 43454, "Hosteleria");
 
+        añadirTienda("Tienda3", 43454, "Ocio");
+        añadirTienda("Tienda4", 43454, "Hosteleria");
+        añadirTienda("Tienda5", 43454, "Hosteleria");
+        añadirTienda("Tienda6", 43454, "Hosteleria");
 
     }
+
+}
 
 
 
