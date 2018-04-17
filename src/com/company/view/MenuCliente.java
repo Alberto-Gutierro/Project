@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class MenuCliente {
 
-    int opcion;
+
 
     public void mostrar(ManagerCentroComercial managerCentroComercial){
 

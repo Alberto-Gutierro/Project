@@ -1,11 +1,14 @@
 package com.company.view;
 
 import com.company.managers.ManagerCentroComercial;
-import com.company.model.Tienda;
+
+import java.awt.*;
+
 
 public class PantallaMapa {
 
     String[] local = new String[10];
+    Color color=Color.green;
 
     public  void mostrar(ManagerCentroComercial managerCentroComercial, int[] tiendasMarcar){
 
@@ -28,14 +31,14 @@ public class PantallaMapa {
             if(tiendasMarcar != null){
                 for (int i = 0; i < tiendasMarcar.length; i++) {
                     if(posicionTienda == tiendasMarcar[i]){
-                        return "$";
+                        return "\033[92;100;1m$\033[0m";
                     }
                 }
             }
-            return "X";
+            return "\033[33mX\033[0m";
         }
         else {
-            return "O";
+            return "\033[33mO\033[0m";
         }
 
     }
