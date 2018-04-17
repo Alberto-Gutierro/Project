@@ -1,4 +1,5 @@
 package com.company.view;
+import com.company.managers.ManagerCentroComercial;
 import com.company.view.MostrarDatos;
 import com.company.model.Empresario;
 
@@ -7,7 +8,7 @@ import java.util.Scanner;
 
 public class MenuAdmin {
 
-    public void mostrar() {
+    public void mostrar(ManagerCentroComercial managerCentroComercial) {
         Scanner scanner = new Scanner(System.in);
 
         int opcion;
@@ -31,8 +32,8 @@ public class MenuAdmin {
                     menuPrincipal.mostrar(managerCentroComercial);
                     break;
                 case 3:
-                    MostrarDatos mostrarDatos = new MostrarDatos();
-                    mostrarDatos.mostrarFichaEmpresario();
+                    MostrarDatos mostrarDatos2 = new MostrarDatos();
+                    mostrarDatos2.mostrarFichaEmpresario();
                     break;
                 case 0:
                     break;
