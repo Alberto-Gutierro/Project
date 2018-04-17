@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 public class PedirDatos {
 
-    Tienda tienda = new Tienda();
-    Empresario empresario = new Empresario();
+    public Tienda tienda = new Tienda();
+    public Empresario empresario = new Empresario();
     Scanner scanner = new Scanner(System.in);
 
     public void pedirDatosEmpresario(ManagerCentroComercial managerCentroComercial) {

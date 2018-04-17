@@ -5,8 +5,8 @@ import com.company.model.Tienda;
 
 public class ManagerCentroComercial {
 
-    Tienda[] tienda = new Tienda[10];
-    Empresario[] empresarios = new Empresario[10];
+    public Tienda[] tienda = new Tienda[10];
+   public Empresario[] empresarios = new Empresario[10];
 
    public void añadirTienda(String tiendanombre, int tiendatelf, String tipotienda){
 
