@@ -1,6 +1,5 @@
 package com.company.view;
 
-import com.company.managers.ManagerCentroComercial;
 import com.company.model.Empresario;
 import com.company.model.Tienda;
 
@@ -9,7 +8,7 @@ public class MostrarDatos {
     Empresario empresario = new Empresario();
     Tienda tienda = new Tienda();
 
-    public void mostrarFichaEmpresario(ManagerCentroComercial managerCentroComercial ) {
+    public void mostrarFichaEmpresario() {
 
         System.out.println("Datos empresario");
         System.out.println("--------------------------------");
