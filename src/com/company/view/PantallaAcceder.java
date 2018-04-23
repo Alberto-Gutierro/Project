@@ -20,7 +20,19 @@ public class PantallaAcceder {
         empresario.nombreEmpresario = editText.read("Introduzca su nombre:\n");
         empresario.NIF = editText.read("Introduzca un dni:\n");
         managerCentroComercial.añadirEmpresario(empresario.nombreEmpresario, empresario.apellidoEmpresario, empresario.nickEmpresario, empresario.NIF, empresario.telEmpresario);
+
+        for (int i = 0; i < managerCentroComercial.empresarios.length; i++) {
+
+
+            if (empresario.nombreEmpresario.equals(managerCentroComercial.empresarios[1].nombreEmpresario) && empresario.NIF.equals(managerCentroComercial.empresarios[2].NIF)) {
+                MostrarDatos mostrarDatos = new MostrarDatos();
+                mostrarDatos.mostrarFichaTienda(managerCentroComercial, i);
+                break;
+            }
+
+        }
     }
+
 
 }
 
