@@ -2,7 +2,7 @@ package com.company.managers;
 
 import com.company.model.Empresario;
 import com.company.model.Tienda;
-import com.company.view.PantallaMapa;
+
 
 public class ManagerCentroComercial {
 
@@ -49,6 +49,34 @@ public class ManagerCentroComercial {
         }
 
         return encontradas;
+    }
+
+
+    public int[] buscarTienaPorNombre(String nombre){
+
+        int suma=0;
+
+        for (int i = 0; i <tienda.length ; i++) {
+            if (tienda[i] != null && nombre.equals(tienda[i].nombreTienda)){
+                suma++;
+            }
+
+        }
+
+        int[] encontradas = new int[suma];
+
+        for (int i = 0, j=0; i < tienda.length; i++) {
+
+            if(tienda[i] != null && nombre.equals(tienda[i].nombreTienda)){
+                encontradas[j]=i;
+                j++;
+            }
+
+        }
+
+        return encontradas;
+
+
     }
 
 

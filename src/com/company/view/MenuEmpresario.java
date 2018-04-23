@@ -31,17 +31,13 @@ public class MenuEmpresario {
 
             break;
          case 2:
-//                Mostrar mapa
-
             PantallaMapa pantallaMapa =new PantallaMapa();
             pantallaMapa.mostrar(managerCentroComercial, null);
-
-
-
 
             break;
          case 3:
 //                Acceder tienda
+            PantallaAcceder pantallaAcceder = new PantallaAcceder();
             break;
 
          default:

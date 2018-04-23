@@ -1,7 +1,6 @@
 package com.company.view;
 
 import com.company.managers.ManagerCentroComercial;
-
 import java.util.Scanner;
 
 public class MenuPrincipal {
@@ -32,7 +31,7 @@ public class MenuPrincipal {
                 break;
             case 3:
                 MenuAdmin menuAdmin = new MenuAdmin();
-                menuAdmin.mostrar();
+                menuAdmin.mostrar(managerCentroComercial);
                 break;
             case 0:
                 break;

@@ -21,7 +21,6 @@ public class PedirDatos {
         empresario.apellidoEmpresario = editText.read("Introduzca su Apellido, por ejemplo \nJolluso");
         empresario.nickEmpresario = editText.read("Introduzca su Nick,por ejemplo \nXtreme");
 
-
         empresario.NIF = editText.read("Introduzca un dni, por ejemplo \n12136548X");
 
         empresario.telEmpresario = editText.readNumeros("Introduzca un numero de telefono,ejemplo: 933865652");

@@ -1,7 +1,7 @@
 package com.company.view;
 
 import com.company.managers.ManagerCentroComercial;
-import com.company.model.Tienda;
+
 
 import java.util.Scanner;
 
@@ -10,10 +10,6 @@ public class PantallaBucadorCategoria {
 
     int opcion;
     String busqueda;
-
-
-
-
 
     public void mostrar(ManagerCentroComercial managerCentroComercial) {
 
