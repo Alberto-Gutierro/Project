@@ -10,10 +10,9 @@ public class ManagerCentroComercial {
 
     public String[] opciones = {"Alimentacion", "Ocio", "Moda", "Hosteleria"};
 
-
     public Empresario[] empresarios = new Empresario[10];
 
-   public void añadirTienda(String tiendanombre, int tiendatelf, String tipotienda){
+    public void añadirTienda(String tiendanombre, int tiendatelf, String tipotienda){
 
         for (int i = 0; i <tienda.length; i++) {
 
@@ -31,12 +30,13 @@ public class ManagerCentroComercial {
     }
 
     public int[] buscarTiendaPorCateoria(String categoria){
+
        int cantidad=0;
+
         for (int i = 0; i < tienda.length ; i++) {
             if (tienda[i] != null && categoria.equals(tienda[i].CategoriaTienda)){
                 cantidad++;
             }
-
         }
 
        int[] encontradas = new int[cantidad]; // {3,7,9}
@@ -47,7 +47,6 @@ public class ManagerCentroComercial {
                 j++;
             }
         }
-
         return encontradas;
     }
 
@@ -60,7 +59,6 @@ public class ManagerCentroComercial {
             if (tienda[i] != null && nombre.equals(tienda[i].nombreTienda)){
                 suma++;
             }
-
         }
 
         int[] encontradas = new int[suma];
@@ -71,12 +69,8 @@ public class ManagerCentroComercial {
                 encontradas[j]=i;
                 j++;
             }
-
         }
-
         return encontradas;
-
-
     }
 
 

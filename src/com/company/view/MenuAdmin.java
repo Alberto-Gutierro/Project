@@ -24,7 +24,7 @@ public class MenuAdmin {
             switch (opcion) {
                 case 1:
                     MostrarDatos mostrarDatos = new MostrarDatos();
-                    mostrarDatos.mostrarFichaTienda();
+                    mostrarDatos.mostrarFichaTienda(managerCentroComercial, 1);
                     break;
                 case 2:
                     MenuPrincipal menuPrincipal=new MenuPrincipal();
@@ -32,7 +32,7 @@ public class MenuAdmin {
                     break;
                 case 3:
                     MostrarDatos mostrarDatos2 = new MostrarDatos();
-                    mostrarDatos2.mostrarFichaEmpresario();
+                    mostrarDatos2.mostrarFichaEmpresario(managerCentroComercial,1);
                     break;
                 case 0:
                     break;
