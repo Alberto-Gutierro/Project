@@ -13,7 +13,7 @@ public class ManagerCentroComercial {
 
     public Empresario[] empresarios = new Empresario[10];
 
-    public void añadirTienda(String tiendanombre, int tiendatelf, String tipotienda){
+    public void añadirTienda(String tiendanombre, int tiendatelf, String tipotienda) {
 
         for (int i = 0; i < tienda.length; i++) {
 
@@ -105,6 +105,4 @@ public class ManagerCentroComercial {
 
 
     }
-
-
-
+}
