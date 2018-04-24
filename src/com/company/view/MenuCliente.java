@@ -1,7 +1,5 @@
 package com.company.view;
-
 import com.company.managers.ManagerCentroComercial;
-
 import java.util.Scanner;
 
 public class MenuCliente {
