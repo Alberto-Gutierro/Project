@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MenuCliente {
 
-    int opcion;
+
 
     public void mostrar(ManagerCentroComercial managerCentroComercial){
 
@@ -23,13 +23,17 @@ public class MenuCliente {
 
             switch (opcion) {
                 case 1:
+                    PantallaBuscador pantallaBuscador = new PantallaBuscador();
+                    pantallaBuscador.mostrar(managerCentroComercial);
 
                     break;
                 case 2:
+                    PantallaMapa pantallaMapa = new PantallaMapa();
+                    pantallaMapa.mostrar(managerCentroComercial, null);
 
                     break;
                 case 0:
-                    MenuPrincipal menuPrincipal=new MenuPrincipal();
+                    MenuPrincipal menuPrincipal = new MenuPrincipal();
                     menuPrincipal.mostrar(managerCentroComercial);
                     break;
 

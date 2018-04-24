@@ -2,13 +2,15 @@ package com.company.view;
 import com.company.managers.ManagerCentroComercial;
 import com.company.view.MostrarDatos;
 import com.company.model.Empresario;
+import com.company.managers.ManagerCentroComercial;
+
 
 import java.util.Scanner;
 
 
 public class MenuAdmin {
 
-    public void mostrar(ManagerCentroComercial managerCentroComercial) {
+    public void mostrar() {
         Scanner scanner = new Scanner(System.in);
 
         int opcion;
@@ -40,7 +42,6 @@ public class MenuAdmin {
 
                 default:
                     System.out.println("OPCIÓN INCORRECTA!");
-
                     break;
             }
 

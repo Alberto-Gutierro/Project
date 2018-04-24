@@ -7,6 +7,8 @@ public class Main {
     public static void main(String[] args) {
 
         ManagerCentroComercial managerCentroComercial = new ManagerCentroComercial();
+        managerCentroComercial.crearTiendasInciles();
+
         MenuPrincipal menuPrincipal = new MenuPrincipal();
 
         menuPrincipal.mostrar(managerCentroComercial);
