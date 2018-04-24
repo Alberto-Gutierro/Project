@@ -23,7 +23,6 @@ public class PantallaAcceder {
 
         for (int i = 0; i < managerCentroComercial.empresarios.length; i++) {
 
-
             if (empresario.nombreEmpresario.equals(managerCentroComercial.empresarios[1].nombreEmpresario) && empresario.NIF.equals(managerCentroComercial.empresarios[2].NIF)) {
                 MostrarDatos mostrarDatos = new MostrarDatos();
                 mostrarDatos.mostrarFichaTienda(managerCentroComercial, i);
