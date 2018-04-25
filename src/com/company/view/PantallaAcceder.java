@@ -10,7 +10,7 @@ public class PantallaAcceder {
 
     public void mostrar(ManagerCentroComercial managerCentroComercial) {
 
-        System.out.println("DATOS DEL EMPRESARIO");
+        System.out.println("Introduce Tus datos");
         EditText editText = new EditText();
 
         empresario.nombreEmpresario = editText.read("Introduzca su nombre:\n");

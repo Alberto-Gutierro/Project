@@ -1,6 +1,7 @@
 package com.company.view;
 
 import com.company.managers.ManagerCentroComercial;
+import com.company.view.widget.MenuGen;
 
 import java.util.Scanner;
 
@@ -9,18 +10,22 @@ public class MenuEmpresario {
    public void mostrar(ManagerCentroComercial managerCentroComercial) {
 
       Scanner scanner = new Scanner(System.in);
+      MenuGen menuGen = new MenuGen();
+
       int opcion;
 
       do {
 
-         System.out.println("MENU EMPRESARIO");
-         System.out.println("1. Crear tienda");
-         System.out.println("2. Mostrar mapa (espacios[tiendas] libres)");
-         System.out.println("3. Acceder tienda (info. tienda)");
-         System.out.println("0. Salir");
+         opcion=menuGen.mostrar("    ------------------------------\n    MENU EMPRESARIO\n    1. Crear tienda\n    2. Mostrar mapa\n    3. Acceder tienda\n\n    0. Salir\n    ------------------------------");
+
+//         System.out.println("");
+//         System.out.println("");
+//         System.out.println(" (espacios[tiendas] libres)");
+//         System.out.println(" (info. tienda)");
+//         System.out.println("");
 //
-         opcion = scanner.nextInt();
-         scanner.nextLine();
+//         opcion = scanner.nextInt();
+//         scanner.nextLine();
 
 
       switch (opcion) {
