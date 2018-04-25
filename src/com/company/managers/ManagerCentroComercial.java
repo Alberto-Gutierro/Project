@@ -95,6 +95,7 @@ public class ManagerCentroComercial {
     }
 
     public void crearTiendasInciles() {
+
         añadirTienda("MercaHome", 111111111, "Alimentacion");
         añadirTienda("M & H", 222222222, "Moda");
         añadirTienda("Nuevo Parque", 333333333, "Ocio");

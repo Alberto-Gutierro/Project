@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 
 public class MenuAdmin {
+    MostrarDatos mostrarDatos = new MostrarDatos();
+    PantallaAdmin pantallaAdmin = new PantallaAdmin();
 
     public void mostrar(ManagerCentroComercial managerCentroComercial) {
         Scanner scanner = new Scanner(System.in);
@@ -24,16 +26,18 @@ public class MenuAdmin {
 
             switch (opcion) {
                 case 1:
-                    MostrarDatos mostrarDatos = new MostrarDatos();
+
                     mostrarDatos.mostrarFichaTienda(managerCentroComercial, 1);
+                    pantallaAdmin.mostrarTienda(managerCentroComercial,mostrarDatos);
                     break;
                 case 2:
                     MenuPrincipal menuPrincipal=new MenuPrincipal();
                     menuPrincipal.mostrar(managerCentroComercial);
                     break;
                 case 3:
-                    MostrarDatos mostrarDatos2 = new MostrarDatos();
-                    mostrarDatos2.mostrarFichaEmpresario(managerCentroComercial,1);
+
+
+                    pantallaAdmin.mostrarEmpresario(managerCentroComercial,mostrarDatos);
                     break;
                 case 0:
                     break;
