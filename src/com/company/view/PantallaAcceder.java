@@ -20,6 +20,7 @@ public class PantallaAcceder {
         if (empresario.nickEmpresario.equals("admin") && empresario.NIF.equals("000000000")){
             MenuAdmin menuAdmin = new MenuAdmin();
             menuAdmin.mostrar(managerCentroComercial);
+
         }
         for (int i = 0; i < managerCentroComercial.empresarios.length; i++) {
 
