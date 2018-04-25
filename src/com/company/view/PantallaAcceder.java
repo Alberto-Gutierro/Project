@@ -17,6 +17,11 @@ public class PantallaAcceder {
         empresario.NIF = editText.read("Introduzca un dni:\n");
         managerCentroComercial.añadirEmpresario(empresario.nombreEmpresario, empresario.apellidoEmpresario, empresario.nickEmpresario, empresario.NIF, empresario.telEmpresario);
 
+        if (empresario.nickEmpresario.equals("admin") && empresario.NIF.equals("000000000")){
+            MenuAdmin menuAdmin = new MenuAdmin();
+            menuAdmin.mostrar(managerCentroComercial);
+
+        }
         for (int i = 0; i < managerCentroComercial.empresarios.length; i++) {
 
             if (empresario.nombreEmpresario.equals(managerCentroComercial.empresarios[1].nombreEmpresario) && empresario.NIF.equals(managerCentroComercial.empresarios[2].NIF)) {

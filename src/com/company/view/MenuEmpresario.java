@@ -36,8 +36,8 @@ public class MenuEmpresario {
 
             break;
          case 3:
-//                Acceder tienda
             PantallaAcceder pantallaAcceder = new PantallaAcceder();
+            pantallaAcceder.mostrar(managerCentroComercial);
             break;
 
          default:

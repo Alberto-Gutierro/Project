@@ -33,8 +33,8 @@ public class PantallaBuscador {
 
                     break;
                 case 0:
-
-
+                    MenuCliente menuCliente = new MenuCliente();
+                    menuCliente.mostrar(managerCentroComercial);
 
                     break;
 

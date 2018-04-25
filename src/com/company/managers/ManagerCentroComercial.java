@@ -10,8 +10,8 @@ public class ManagerCentroComercial {
 
     public String[] opciones = {"Alimentacion", "Ocio", "Moda", "Hosteleria"};
 
-
     public Empresario[] empresarios = new Empresario[10];
+
 
     public void añadirTienda(String tiendanombre, int tiendatelf, String tipotienda) {
 
@@ -50,7 +50,6 @@ public class ManagerCentroComercial {
         return encontradas;
     }
 
-
     public int[] buscarTienaPorNombre(String nombre) {
 
         int suma = 0;
@@ -73,7 +72,6 @@ public class ManagerCentroComercial {
         return encontradas;
     }
 
-
     public void añadirEmpresario(String emp_name, String emp_last, String emp_nick, String emp_nif, int emp_telf) {
 
         for (int i = 0; i < tienda.length; i++) {
@@ -88,21 +86,23 @@ public class ManagerCentroComercial {
                 empresarios[i] = empresario1;
                 break;
             }
-
         }
-
-
     }
 
     public void crearTiendasInciles() {
         añadirTienda("MercaHome", 111111111, "Alimentacion");
+        añadirEmpresario("Pepe", "Luis","LuisBotones","123456789",111223344);
         añadirTienda("M & H", 222222222, "Moda");
+        añadirEmpresario("Paco","Rabane","P&R","234567891",222334455);
         añadirTienda("Nuevo Parque", 333333333, "Ocio");
+        añadirEmpresario("Alberto","Del Rio", "Albert Riera","345678912",333445566);
         añadirTienda("JAJA SAL2", 444444444, "Hosteleria");
+        añadirEmpresario("Jaime","Escobar","Jacobo","456789123",444556677);
         añadirTienda("Arcampo", 555555555, "Alimentacio");
+        añadirEmpresario("Pedro","Rajoy","PEPSOE","56789123",555667788);
         añadirTienda("Raven", 666666666, "Ocio");
+        añadirEmpresario("Manolo","Rastrillo", "Mastrillo", "678912345",666778899);
         añadirTienda("Boveda", 777777777, "Ocio");
-
-
+        añadirEmpresario("Juan","Gracia","Jracioso", "789123456",777889900);
     }
 }

@@ -30,8 +30,8 @@ public class MenuPrincipal {
                 menuCliente.mostrar(managerCentroComercial);
                 break;
             case 3:
-                MenuAdmin menuAdmin = new MenuAdmin();
-                menuAdmin.mostrar(managerCentroComercial);
+                PantallaAcceder pantallaAcceder = new PantallaAcceder();
+                pantallaAcceder.mostrar(managerCentroComercial);
                 break;
             case 0:
                 break;
@@ -45,4 +45,3 @@ public class MenuPrincipal {
 
     }
 }
- /* g */
