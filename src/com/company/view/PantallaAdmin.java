@@ -6,8 +6,10 @@ import java.util.Scanner;
 
 public class PantallaAdmin {
 
+    MostrarDatos mostrarDatos = new MostrarDatos();
 
-    public void mostrarTienda(ManagerCentroComercial managerCentroComercial, MostrarDatos mostrarDatos){
+
+    public void mostrarTienda(ManagerCentroComercial managerCentroComercial){
 
         System.out.println("  --------------------------------------------");
         System.out.println("| Ficha Centro comercial \033[31mLa Conductora\033[0m       |");
@@ -18,6 +20,7 @@ public class PantallaAdmin {
 
             }else{
                 System.out.println("Datos de las tiendas :");
+
                 mostrarDatos.mostrarFichaTienda(managerCentroComercial, i);
 
 
@@ -27,7 +30,7 @@ public class PantallaAdmin {
 
     }
 
-    public void mostrarEmpresario(ManagerCentroComercial managerCentroComercial, MostrarDatos mostrarDatos2){
+    public void mostrarEmpresario(ManagerCentroComercial managerCentroComercial){
 
         System.out.println("  --------------------------------------------");
         System.out.println("| Ficha Centro comercial \033[31mLa Conductora\033[0m       |");
@@ -38,7 +41,7 @@ public class PantallaAdmin {
 
             }else{
                 System.out.println("Datos de los empresarios :");
-                mostrarDatos2.mostrarFichaEmpresario(managerCentroComercial, i);
+                mostrarDatos.mostrarFichaEmpresario(managerCentroComercial, i);
 
             }
 

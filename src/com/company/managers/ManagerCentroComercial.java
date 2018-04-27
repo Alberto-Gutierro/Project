@@ -10,7 +10,7 @@ public class ManagerCentroComercial {
 
     public String[] opciones = {"Alimentacion", "Ocio", "Moda", "Hosteleria"};
 
-    public Empresario[] empresarios = new Empresario[10];
+    public Empresario[] empresarios = new Empresario[11];
 
 
     public void añadirTienda(String tiendanombre, int tiendatelf, String tipotienda) {
@@ -71,6 +71,14 @@ public class ManagerCentroComercial {
         }
         return encontradas;
     }
+    public void añadirAdmin (){
+
+        Empresario empresario = new Empresario();
+
+        empresario.nombreEmpresario="admin";
+        empresario.NIF="000";
+        empresarios[10]=empresario;
+    }
 
     public void añadirEmpresario(String emp_name, String emp_last, String emp_nick, String emp_nif, int emp_telf) {
 
@@ -83,6 +91,7 @@ public class ManagerCentroComercial {
                 empresario1.nickEmpresario = emp_nick;
                 empresario1.NIF = emp_nif;
                 empresario1.telEmpresario = emp_telf;
+
                 empresarios[i] = empresario1;
                 break;
             }
@@ -105,5 +114,6 @@ public class ManagerCentroComercial {
         añadirEmpresario("Manolo","Rastrillo", "Mastrillo", "678912345",666778899);
         añadirTienda("Boveda", 777777777, "Ocio");
         añadirEmpresario("Juan","Gracia","Jracioso", "789123456",777889900);
+
     }
 }

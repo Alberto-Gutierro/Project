@@ -14,6 +14,7 @@ public class MenuAdmin {
         Scanner scanner = new Scanner(System.in);
 
         MenuGen menuGen = new MenuGen();
+        PantallaAdmin pantallaAdmin = new PantallaAdmin();
 
         int opcion;
 
@@ -34,17 +35,16 @@ public class MenuAdmin {
             switch (opcion) {
                 case 1:
 
-                    mostrarDatos.mostrarFichaTienda(managerCentroComercial, 1);
-                    pantallaAdmin.mostrarTienda(managerCentroComercial,mostrarDatos);
+                    pantallaAdmin.mostrarTienda(managerCentroComercial);
+
                     break;
                 case 2:
-                    MenuPrincipal menuPrincipal=new MenuPrincipal();
-                    menuPrincipal.mostrar(managerCentroComercial);
+                    PantallaMapa pantallaMapa = new PantallaMapa();
+                    pantallaMapa.mostrar(managerCentroComercial, null);
                     break;
                 case 3:
+                    pantallaAdmin.mostrarEmpresario(managerCentroComercial);
 
-
-                    pantallaAdmin.mostrarEmpresario(managerCentroComercial,mostrarDatos);
                     break;
                 case 0:
                     break;

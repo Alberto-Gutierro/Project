@@ -9,14 +9,13 @@ public class MenuPrincipal {
 
     public void mostrar(ManagerCentroComercial managerCentroComercial) {
 
-        Scanner scanner = new Scanner(System.in);
         MenuGen menuGen = new MenuGen();
 
         int opcion;
 
         do {
 
-            opcion=menuGen.mostrar("    ------------------------------ \n    Bienvenido al Menu Principal\n    ¿Que tipo de persona Eres?\n    1. Empresario\n    2 Cliente \n    3 Admin\n \n\n    0 Salir\n    ------------------------------");
+            opcion=menuGen.mostrar("    ------------------------------ \n   Bienvenido al Menu Principal\n    ¿Que tipo de persona Eres?\n    1. Empresario\n    2 Cliente \n    3 Admin\n \n\n    0 Salir\n    ------------------------------");
 
 //            System.out.println("    ------------------------------");
 //            System.out.println("    ");

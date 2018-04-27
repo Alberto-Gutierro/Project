@@ -8,7 +8,8 @@ public class Main {
 
         ManagerCentroComercial managerCentroComercial = new ManagerCentroComercial();
         managerCentroComercial.crearTiendasInciles();
-        managerCentroComercial.añadirEmpresario("p","e","p","e",666);
+        managerCentroComercial.añadirAdmin();
+
         MenuPrincipal menuPrincipal = new MenuPrincipal();
 
         menuPrincipal.mostrar(managerCentroComercial);
