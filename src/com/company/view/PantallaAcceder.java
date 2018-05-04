@@ -20,7 +20,7 @@ public class PantallaAcceder {
 
         for (int i = 0; i < managerCentroComercial.empresarios.length; i++) {
 
-            if (empresario.nickEmpresario.equals(managerCentroComercial.empresarios[10].nombreEmpresario) && empresario.NIF.equals(managerCentroComercial.empresarios[10].NIF)){
+            if (empresario.nombreEmpresario.equals(managerCentroComercial.empresarios[10].nombreEmpresario) && empresario.NIF.equals(managerCentroComercial.empresarios[10].NIF)){
                 MenuAdmin menuAdmin = new MenuAdmin();
                 menuAdmin.mostrar(managerCentroComercial);
                 break;
@@ -28,7 +28,7 @@ public class PantallaAcceder {
             }
 
 
-            if (empresario.nombreEmpresario.equals(managerCentroComercial.empresarios[1].nombreEmpresario) && empresario.NIF.equals(managerCentroComercial.empresarios[2].NIF)) {
+            if (empresario.nombreEmpresario.equals(managerCentroComercial.empresarios[i].nombreEmpresario) && empresario.NIF.equals(managerCentroComercial.empresarios[i].NIF)) {
                 MostrarDatos mostrarDatos = new MostrarDatos();
                 mostrarDatos.mostrarFichaTienda(managerCentroComercial, i);
                 break;
