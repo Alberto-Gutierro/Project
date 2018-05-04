@@ -17,13 +17,6 @@ public class MenuPrincipal {
 
             opcion=menuGen.mostrar("    ------------------------------ \n   Bienvenido al Menu Principal\n    ¿Que tipo de persona Eres?\n    1. Empresario\n    2 Cliente \n    3 Admin\n \n\n    0 Salir\n    ------------------------------");
 
-//            System.out.println("    ------------------------------");
-//            System.out.println("    ");
-//            System.out.println("    ");
-//            System.out.println("    1. Empresario\n    2 Cliente \n    3 Admin\n \n\n    0 Salir");
-//            System.out.println("    ------------------------------");
-//            opcion = scanner.nextInt();
-//            scanner.nextLine();
 
             switch (opcion) {
             case 1:

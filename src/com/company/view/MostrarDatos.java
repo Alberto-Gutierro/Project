@@ -6,7 +6,6 @@ import com.company.managers.ManagerCentroComercial;
 public class MostrarDatos {
 
 
-
     public void mostrarFichaEmpresario(ManagerCentroComercial managerCentroComercial, int num ) {
 
         System.out.println("    --------------------------------");

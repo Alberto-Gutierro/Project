@@ -27,7 +27,6 @@ public class PantallaAcceder {
 
             }
 
-
             if (empresario.nombreEmpresario.equals(managerCentroComercial.empresarios[i].nombreEmpresario) && empresario.NIF.equals(managerCentroComercial.empresarios[i].NIF)) {
                 MostrarDatos mostrarDatos = new MostrarDatos();
                 mostrarDatos.mostrarFichaTienda(managerCentroComercial, i);
