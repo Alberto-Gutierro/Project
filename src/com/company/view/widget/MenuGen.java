@@ -14,6 +14,7 @@ public class MenuGen {
         opcion=scanner.nextInt();
         scanner.nextLine();
 
+
         return opcion;
     }
 }
