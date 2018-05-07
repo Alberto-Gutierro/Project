@@ -26,6 +26,7 @@ public class PantallaMapa {
             if(tiendasMarcar != null){
                 for (int i = 0; i < tiendasMarcar.length; i++) {
                     if(posicionTienda == tiendasMarcar[i]){
+
                         return "\033[92;100;1m$\033[0m";
                     }
                 }
